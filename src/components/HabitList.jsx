@@ -1,7 +1,6 @@
 import Button from './Button';
 
 function HabitList({ habits, onDeleteHabit, onChangeStatus }) {
-  
   function handleOnChangeStatus(e) {
     const newStatus = e.target.value;
     onChangeStatus(habits.id, newStatus);
