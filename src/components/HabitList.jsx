@@ -6,13 +6,11 @@ function HabitList({ habits, onDeleteHabit, onChangeStatus }) {
     onChangeStatus(habits.id, newStatus);
   }
 
-  if (habits.status === 'done') {
+  if (habits.status === 'done')
     setTimeout(() => {
       onDeleteHabit(habits.id);
-      console.log('Deleted');
     }, 1000);
-  }
-  
+
   return (
     <li className="w-full h-8 p-6 bg-[#1C1C1C] rounded-md flex justify-around items-center border border-[#373737] my-2 text-zinc-200">
       <span className="px-2.5">{habits.name}</span>
