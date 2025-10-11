@@ -1,6 +1,6 @@
 import HabitList from './HabitList';
 
-function HabitData({ habits, onDeleteHabit,onChangeStatus }) {
+function HabitData({ habits, onDeleteHabit, onChangeStatus }) {
   return (
     <ul>
       {habits.map((habit) => (
